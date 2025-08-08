@@ -20,7 +20,7 @@ const EventCard = ({ id, title, host, location, date, poster_path }: Event) => {
     const extra = Math.max(participants.length - capacity, 0)
 
     return (
-        <Link href={`/event/${id}`} asChild className=''>
+        <Link href={`/events/${id}`} asChild className=''>
             <TouchableOpacity className='w-full' activeOpacity={0.7}>
                 <View className='w-full h-[29rem] bg-gray-200 rounded-xl mt-5'>
                     <Text className='w-full text-center my-3'>
@@ -36,7 +36,7 @@ const EventCard = ({ id, title, host, location, date, poster_path }: Event) => {
                         </Text>
                     </Text>
 
-                    <Image source={images.cat} className="w-full px-3 rounded-xl h-48" />
+                    <Image source={images.cat} className="w-full px-3 rounded-xl h-52" />
 
 
                     <View className='mt-4 ml-3'>
@@ -49,7 +49,7 @@ const EventCard = ({ id, title, host, location, date, poster_path }: Event) => {
 
                     </View>
 
-                    {/* Avatars row — pinned just above the button */}
+                    {/* If they click on the row, navigate them to the participant list page*/}
                     <View className="absolute right-3 bottom-16 flex-row items-center">
                         {Array.from({ length: capacity }).map((_, i) => {
                             const overlap = i === 0 ? 0 : -8;
