@@ -3,12 +3,19 @@ import './globals.css'
 
 export default function RootLayout() {
   //Stack.Screen to remove the header layout which displays the folder location
-  return <Stack>
+  return (
+    <Stack>
 
-    <Stack.Screen
-      name="(tabs)"
-      options={{ headerShown: false }}
-    />
+      <Stack.Screen
+        name="(tabs)"
+        options={{ headerShown: false }}
+      />
 
-  </Stack>;
+      <Stack.Screen
+        name="events/[event_id]"
+  
+        options={{ headerShown: false }}
+      />
+    </Stack>
+  );
 }

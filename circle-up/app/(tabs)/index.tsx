@@ -10,42 +10,42 @@ const events: Event[] = [
   {
     id: "evt_001",
     title: "Coffee & Code: React Nativeaddkl",
-    date: " Aug 10, 2025 6:00 PM",
+    date: " 2025 6:00 PM, Aug 10",
     host: "Dev YEG",
     location: "Downtown Hub, Edmonton, AB",
   },
   {
     id: "evt_002",
     title: "Indie Game Night",
-    date: " Aug 10, 2025 6:00 PM",
+    date: " 2025 6:00 PM, Aug 10",
     host: "Pixel Arcade",
     location: "124 St & 102 Ave, Edmonton, AB",
   },
   {
     id: "evt_003",
     title: "Startup Mixer",
-    date: " Aug 10, 2025 6:00 PM",
+    date: " 2025 6:00 PM, Aug 10",
     host: "Startup Edmonton",
     location: "TEC Centre, Edmonton, AB",
   },
   {
     id: "evt_004",
     title: "Yoga in the Park",
-    date: " Aug 10, 2025 6:00 PM",
+    date: " 2025 6:00 PM, Aug 10",
     host: "River Valley Yoga",
     location: "Hawrelak Park, Edmonton, AB",
   },
   {
     id: "evt_005",
     title: "Photography Walk",
-    date: " Aug 10, 2025 6:00 PM",
+    date: " 2025 6:00 PM, Aug 10",
     host: "YEG Photographers",
     location: "Old Strathcona, Edmonton, AB",
   },
   {
     id: "evt_006",
     title: "Board Games & Bites",
-    date: " Aug 10, 2025 6:00 PM",
+    date: " 2025 6:00 PM, Aug 10",
     host: "Meeple Cafe",
     location: "Whyte Ave, Edmonton, AB",
   },
@@ -70,7 +70,7 @@ export default function Index() {
             <Button title="Host an event" onPress={() => { }} />
           </View>
           <>
-            <Text className="text-lg text-black font-bold mt-3">Nearby events</Text>
+            <Text className="text-lg text-black font-bold mt-3">Nearby events    map icon current location</Text>
             <FlatList
               data={events}
               renderItem={({ item }) => (
