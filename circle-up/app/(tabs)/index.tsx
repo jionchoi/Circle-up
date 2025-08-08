@@ -70,7 +70,7 @@ export default function Index() {
             <Button title="Host an event" onPress={() => { }} />
           </View>
           <>
-            <Text className="text-lg text-black font-bold mt-3">Nearby events</Text>
+            <Text className="text-lg text-black font-bold mt-3">Nearby events    map icon current location</Text>
             <FlatList
               data={events}
               renderItem={({ item }) => (
