@@ -31,8 +31,13 @@ const _layout = () => {
             <Tabs.Screen
                 name='group'
                 options={{
-                    title: "Group",
-                    headerShown: false
+                    title: "Groups",
+                    headerShown: false,
+                    tabBarIcon: ( {focused} ) => (
+                        <>
+                            <Image source={icons.group} className="size-5 my-2"/>
+                        </>
+                    )
                 }}
             />
 
